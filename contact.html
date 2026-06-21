@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ・相談フォーム｜ふじがおか 実家じまい・空き家相談室</title>
+<meta name="description" content="親の家・相続した実家・空き家のご相談フォーム。売却前提でなくても大丈夫です。磐田市・袋井市・掛川市・森町・浜松市一部に対応。">
+<meta name="theme-color" content="#324c5e">
+<link rel="stylesheet" href="style.css">
+<style>
+  .form-wrap{max-width:720px;margin:0 auto;}
+  .form-intro{background:var(--primary-tint);border-radius:var(--radius);padding:20px 24px;margin-bottom:28px;color:var(--text);font-size:.95rem;}
+  .contact-quick{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px;}
+  .contact-quick .btn{flex:1;min-width:160px;}
+  .field{margin-bottom:22px;}
+  .field label{display:block;font-weight:700;color:var(--primary-dark);margin-bottom:8px;font-size:.95rem;}
+  .field .req{color:#fff;background:var(--accent);font-size:.7rem;border-radius:4px;padding:2px 7px;margin-left:8px;vertical-align:middle;font-weight:700;}
+  .field .opt{color:var(--text-mute);font-size:.78rem;margin-left:8px;font-weight:500;}
+  .field input[type=text],.field input[type=tel],.field input[type=email],.field input[type=datetime-local],.field textarea,.field select{
+    width:100%;font-family:inherit;font-size:1rem;color:var(--text);background:var(--surface);
+    border:1px solid var(--line);border-radius:8px;padding:13px 14px;transition:.2s;}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(68,99,122,.12);}
+  .field textarea{min-height:130px;resize:vertical;}
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;}
+  .checks label{display:flex;gap:9px;align-items:flex-start;font-weight:500;color:var(--text);font-size:.92rem;cursor:pointer;}
+  .checks input{margin-top:4px;}
+  .consent{background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:26px;font-size:.92rem;}
+  .consent label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;}
+  .submit-row{text-align:center;}
+  .submit-row .btn{padding:16px 48px;font-size:1.05rem;}
+  .setup-note{background:#fff7ed;border:1px dashed var(--accent);border-radius:10px;padding:14px 18px;font-size:.83rem;color:var(--accent-dark);margin-bottom:28px;}
+  @media(max-width:680px){ .checks{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="mark">家</span>
+      <span class="brand-name">実家じまい・空き家相談室<small>富士ヶ丘サービス株式会社</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html#options">4つの選択肢</a>
+      <a href="index.html#price">料金</a>
+      <a href="index.html#faq">よくある質問</a>
+      <a href="index.html#contact" class="btn btn-line btn-sm">LINEで相談</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumb"><a href="index.html">トップ</a> ＞ お問い合わせ・相談フォーム</div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="section-head" style="margin-bottom:28px;">
+        <span class="eyebrow">CONTACT</span>
+        <h2>お問い合わせ・相談フォーム</h2>
+      </div>
+
+      <div class="form-intro">
+        売るか決めていなくても大丈夫です。強引な売却営業は行いません。わかる範囲でご記入ください。<br>
+        お急ぎの方は、LINE・お電話が確実です。
+      </div>
+
+      <div class="contact-quick">
+        <a href="#" class="btn btn-line">LINEで相談する</a>
+        <a href="tel:0000000000" class="btn btn-tel">電話で相談する</a>
+      </div>
+
+      <!-- ▼▼ 公開前に必ず差し替え：Formspree等のフォーム送信先URL ▼▼ -->
+      <div class="setup-note">
+        ※【設定メモ】このフォームの送信先は未設定です。Formspree（無料）でフォームIDを取得し、下の form の action を
+        <b>https://formspree.io/f/あなたのID</b> に差し替えると、送信内容が fudosan.fujigaokas@gmail.com に届くようになります。
+        Googleフォームを使う場合は、このフォームを削除してGoogleフォームのリンク／埋め込みに置き換えてください。
+      </div>
+      <!-- ▲▲ 公開前に必ず差し替え ▲▲ -->
+
+      <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="【実家じまい・空き家相談室】相談フォームからのお問い合わせ">
+
+        <div class="field">
+          <label for="name">お名前<span class="req">必須</span></label>
+          <input type="text" id="name" name="お名前" required>
+        </div>
+
+        <div class="field">
+          <label for="tel">電話番号<span class="req">必須</span></label>
+          <input type="tel" id="tel" name="電話番号" required placeholder="例：090-1234-5678">
+        </div>
+
+        <div class="field">
+          <label for="email">メールアドレス<span class="opt">任意</span></label>
+          <input type="email" id="email" name="メールアドレス" placeholder="例：sample@example.com">
+        </div>
+
+        <div class="field">
+          <label for="property">相談したい物件の所在地<span class="opt">任意</span></label>
+          <input type="text" id="property" name="物件の所在地" placeholder="例：磐田市〇〇　※おおよそで構いません">
+        </div>
+
+        <div class="field">
+          <label for="parent">親御様の居住状況<span class="opt">任意</span></label>
+          <select id="parent" name="親御様の居住状況">
+            <option value="">選択してください</option>
+            <option>実家に住んでいる</option>
+            <option>施設入居の予定がある</option>
+            <option>施設に入居済み</option>
+            <option>すでに空き家になっている</option>
+            <option>相続した（親は他界）</option>
+            <option>その他・わからない</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>相談内容（当てはまるものすべて）<span class="opt">任意</span></label>
+          <div class="checks">
+            <label><input type="checkbox" name="相談内容" value="売るか迷っている">売るか迷っている</label>
+            <label><input type="checkbox" name="相談内容" value="貸すか迷っている">貸すか迷っている</label>
+            <label><input type="checkbox" name="相談内容" value="解体するか迷っている">解体するか迷っている</label>
+            <label><input type="checkbox" name="相談内容" value="残す・管理したい">残す・管理したい</label>
+            <label><input type="checkbox" name="相談内容" value="相続した">相続した</label>
+            <label><input type="checkbox" name="相談内容" value="家族会議をしたい">家族会議をしたい</label>
+            <label><input type="checkbox" name="相談内容" value="荷物整理を相談したい">荷物整理を相談したい</label>
+            <label><input type="checkbox" name="相談内容" value="重要事項に関わる確認">重要事項に関わる確認</label>
+            <label><input type="checkbox" name="相談内容" value="専門家を紹介してほしい">専門家を紹介してほしい</label>
+            <label><input type="checkbox" name="相談内容" value="その他">その他</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="method">希望の相談方法<span class="opt">任意</span></label>
+          <select id="method" name="希望の相談方法">
+            <option value="">選択してください</option>
+            <option>LINE</option>
+            <option>電話</option>
+            <option>メール</option>
+            <option>対面（来店）</option>
+            <option>対面（訪問）</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="datetime">希望日時<span class="opt">任意</span></label>
+          <input type="text" id="datetime" name="希望日時" placeholder="例：平日の午前中、〇月〇日14時以降 など">
+        </div>
+
+        <div class="field">
+          <label for="message">ご相談内容・ご質問<span class="opt">任意</span></label>
+          <textarea id="message" name="ご相談内容" placeholder="状況やお困りごとを、わかる範囲でお書きください。"></textarea>
+        </div>
+
+        <div class="consent">
+          <label>
+            <input type="checkbox" name="プライバシー同意" value="同意する" required>
+            <span><a href="privacy-policy.html" target="_blank">プライバシーポリシー</a>に同意のうえ送信します。<span class="req" style="margin-left:0;">必須</span></span>
+          </label>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-tel">この内容で送信する</button>
+        </div>
+      </form>
+
+      <p style="margin-top:30px;"><a href="index.html" class="btn btn-outline btn-sm">← トップページに戻る</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">© 富士ヶ丘サービス株式会社　ふじがおか 実家じまい・空き家相談室</div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
