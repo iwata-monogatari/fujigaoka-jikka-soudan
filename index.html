@@ -3,423 +3,405 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>磐田物語 ｜ 佐口行正氏所蔵史料と、遠江・見付のまちの記憶</title>
-<meta name="description" content="見付の旧家・佐口行正氏が所蔵する引札・浮世絵・古地図・絵葉書など約336点の史料を中心に、静岡県磐田市の歴史と文化を一市民の視点でたどる記録の場。佐口行正氏のご厚意により公開しています。">
-<meta property="og:title" content="磐田物語 ｜ 佐口行正氏所蔵史料と、遠江・見付のまちの記憶">
-<meta property="og:description" content="佐口行正氏所蔵の引札・浮世絵・絵葉書など約336点の史料を中心に、磐田・見付のまちの記憶をたどります。">
+<title>磐田市の実家じまい・空き家相談｜介護と不動産の富士ヶ丘サービス</title>
+<meta name="description" content="親が施設に入った後の実家、相続した空き家、売るか残すか迷っている親の家のご相談に対応。磐田市・袋井市・掛川市・森町・浜松市一部エリアで、介護と不動産の両方がわかる富士ヶ丘サービスが、売却ありきではなく、ご家族に合う選択肢を一緒に整理します。">
+<meta name="theme-color" content="#324c5e">
+<!-- OGP -->
 <meta property="og:type" content="website">
+<meta property="og:title" content="ふじがおか 実家じまい・空き家相談室">
+<meta property="og:description" content="親の家、相続した実家、空き家のこと。売る前に、まず一緒に整理しませんか。介護と不動産の両方がわかる富士ヶ丘サービス。">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="saguchi/img/hk-3.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#f7f2e9; --paper-deep:#efe6d4; --ink:#3a312a; --ink-soft:#6b5d50;
-    --brown:#a6713e; --brown-deep:#85562c; --pine:#46624a; --vermil:#b3503a;
-    --line:#e0d4bd; --card:#fffdf8;
-    --shadow:0 1px 2px rgba(80,60,40,.06),0 8px 24px rgba(80,60,40,.07);
-    --shadow-lg:0 4px 12px rgba(80,60,40,.10),0 18px 50px rgba(80,60,40,.14);
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;font-size:17px;letter-spacing:.02em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho",serif;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 20% 30%, rgba(166,113,62,.04) 0, transparent 38%),radial-gradient(circle at 80% 70%, rgba(70,98,74,.03) 0, transparent 40%);}
-  a{color:var(--brown-deep);text-underline-offset:3px;}
-  img{display:block;max-width:100%;}
-
-  header.site{background:rgba(255,253,248,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
-  .bar{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
-  .brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:inherit;}
-  .brand .logo{font-family:"Shippori Mincho",serif;font-weight:800;font-size:25px;color:var(--ink);letter-spacing:.06em;}
-  .brand .logo .dot{color:var(--brown);}
-  .brand .tag{font-size:12px;color:var(--ink-soft);letter-spacing:.08em;}
-  nav.menu{display:flex;gap:20px;flex-wrap:wrap;}
-  nav.menu a{text-decoration:none;color:var(--ink-soft);font-size:14px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent;transition:.2s;white-space:nowrap;}
-  nav.menu a:hover{color:var(--brown-deep);border-color:var(--brown);}
-  nav.menu a.lead{color:var(--vermil);font-weight:700;}
-
-  /* ===== ヒーロー：佐口史料 ===== */
-  .feature{background:linear-gradient(180deg,#fffaf0 0%, var(--paper) 100%);border-bottom:1px solid var(--line);}
-  .feature .inner{max-width:1100px;margin:0 auto;padding:60px 24px 56px;display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center;}
-  .feature .eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--vermil);font-weight:700;margin:0 0 18px;display:flex;align-items:center;gap:10px;}
-  .feature .eyebrow::before{content:"";width:30px;height:2px;background:var(--vermil);display:inline-block;}
-  .feature h1{font-family:"Shippori Mincho",serif;font-weight:800;font-size:clamp(30px,4.6vw,46px);line-height:1.4;margin:0 0 22px;color:var(--ink);letter-spacing:.03em;}
-  .feature h1 .accent{background:linear-gradient(transparent 60%, rgba(179,80,58,.18) 60%);}
-  .feature .lead{font-size:16.5px;color:var(--ink-soft);margin:0 0 18px;line-height:2.0;}
-  .feature .credit{font-size:13px;color:var(--ink-soft);background:var(--card);border:1px solid var(--line);border-left:3px solid var(--brown);border-radius:2px;padding:12px 16px;margin:0 0 26px;line-height:1.8;}
-  .feature .cta-row{display:flex;flex-wrap:wrap;gap:13px;}
-  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:13px 26px;border-radius:2px;transition:.2s;letter-spacing:.04em;}
-  .btn.primary{background:var(--vermil);color:#fff;box-shadow:0 6px 18px rgba(179,80,58,.25);}
-  .btn.primary:hover{background:#9c4330;}
-  .btn.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card);}
-  .btn.ghost:hover{border-color:var(--brown);color:var(--brown-deep);}
-
-  /* モザイク */
-  .mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,118px);gap:12px;}
-  .mosaic figure{margin:0;overflow:hidden;border-radius:4px;box-shadow:var(--shadow-lg);background:var(--card);}
-  .mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
-  .mosaic figure:hover img{transform:scale(1.06);}
-  .mosaic .tall{grid-row:span 2;}
-  .mosaic .wide{grid-column:span 2;}
-
-  /* ===== 見どころギャラリー ===== */
-  .gallery{max-width:1100px;margin:0 auto;padding:62px 24px 8px;}
-  .sec-head{margin:0 0 28px;}
-  .sec-head .eyebrow{font-size:12.5px;letter-spacing:.2em;color:var(--pine);font-weight:700;margin:0 0 10px;}
-  .sec-head h2{font-family:"Shippori Mincho",serif;font-weight:700;font-size:27px;margin:0;color:var(--ink);letter-spacing:.04em;}
-  .sec-head .desc{margin:12px 0 0;color:var(--ink-soft);font-size:15px;max-width:760px;line-height:1.9;}
-  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  .gal-item{position:relative;display:block;overflow:hidden;border-radius:4px;box-shadow:var(--shadow);background:var(--card);text-decoration:none;color:inherit;aspect-ratio:4/3;}
-  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s;}
-  .gal-item:hover img{transform:scale(1.07);}
-  .gal-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 14px 11px;color:#fff;font-size:12.5px;line-height:1.5;background:linear-gradient(transparent,rgba(40,28,18,.82));}
-  .gal-item figcaption b{font-family:"Shippori Mincho",serif;font-weight:700;font-size:13.5px;display:block;margin-bottom:1px;}
-  .gal-cat{position:absolute;top:10px;left:10px;background:rgba(179,80,58,.92);color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:2px;}
-
-  /* ===== 佐口・2枚カード ===== */
-  .pri{max-width:1100px;margin:0 auto;padding:34px 24px 6px;}
-  .pri-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  a.pcard{display:flex;gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:.2s;}
-  a.pcard:hover{transform:translateY(-3px);border-color:var(--brown);}
-  a.pcard .thumb{width:96px;height:96px;flex:0 0 96px;border-radius:3px;overflow:hidden;}
-  a.pcard .thumb img{width:100%;height:100%;object-fit:cover;}
-  a.pcard h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:18px;margin:0 0 6px;color:var(--ink);}
-  a.pcard p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.75;}
-  a.pcard .go{display:inline-block;margin-top:9px;font-size:12.5px;color:var(--vermil);font-weight:700;}
-
-  /* ===== このサイトについて ===== */
-  .about{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px;}
-  .about .inner{max-width:1100px;margin:0 auto;padding:54px 24px;display:grid;grid-template-columns:300px 1fr;gap:46px;align-items:center;}
-  .about .ph{border-radius:4px;overflow:hidden;box-shadow:var(--shadow-lg);}
-  .about .ph img{width:100%;height:220px;object-fit:cover;}
-  .about .ph .cap{font-size:11.5px;color:var(--ink-soft);background:var(--card);padding:7px 12px;}
-  .about .label{font-family:"Shippori Mincho",serif;font-weight:700;font-size:20px;color:var(--ink);margin:0 0 14px;}
-  .about .label .en{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11px;letter-spacing:.2em;color:var(--brown);font-weight:700;margin-top:6px;}
-  .about p{margin:0 0 16px;color:var(--ink);font-size:16px;}
-  .about p:last-child{margin-bottom:0;}
-
-  /* ===== コンテンツ・セクション ===== */
-  .section{max-width:1100px;margin:0 auto;padding:56px 24px 6px;scroll-margin-top:74px;}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  a.card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:24px 22px;box-shadow:var(--shadow);transition:.22s;text-decoration:none;color:inherit;display:block;}
-  a.card:hover{transform:translateY(-3px);border-color:var(--brown);}
-  a.card .num{font-family:"Shippori Mincho",serif;font-size:12.5px;color:var(--brown);font-weight:700;letter-spacing:.08em;}
-  a.card h3{font-family:"Shippori Mincho",serif;font-weight:700;font-size:17px;margin:7px 0 9px;color:var(--ink);line-height:1.5;}
-  a.card p{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.78;}
-  a.card .go{display:inline-block;margin-top:11px;font-size:12.5px;color:var(--brown-deep);font-weight:700;}
-  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 9px;border-radius:2px;margin-bottom:9px;}
-  .badge.tool{background:#eaf0ea;color:var(--pine);}
-  .badge.feature{background:rgba(179,80,58,.14);color:var(--vermil);}
-
-  .series-sec{background:var(--paper-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px;}
-  .series-intro{max-width:760px;margin:0 0 26px;color:var(--ink-soft);font-size:15px;line-height:2;}
-
-  footer.site{background:var(--ink);color:#e9e0d2;margin-top:60px;}
-  footer.site .inner{max-width:1100px;margin:0 auto;padding:42px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:22px;align-items:flex-end;}
-  footer .f-brand{font-family:"Shippori Mincho",serif;font-size:21px;font-weight:700;letter-spacing:.06em;}
-  footer .f-brand .dot{color:var(--brown);}
-  footer .f-note{font-size:12.5px;color:#b8ab98;line-height:1.9;max-width:560px;}
-  footer .copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12px;color:#9c8f7c;letter-spacing:.04em;}
-
-  @media(max-width:860px){
-    nav.menu{display:none;}
-    .feature .inner{grid-template-columns:1fr;gap:34px;}
-    .about .inner{grid-template-columns:1fr;gap:22px;}
-    .pri-grid{grid-template-columns:1fr;}
-  }
-  @media(max-width:600px){
-    .gal-grid{grid-template-columns:1fr 1fr;}
-    .grid{grid-template-columns:1fr;}
-    .mosaic{grid-template-rows:repeat(3,98px);}
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="bar">
-    <a class="brand" href="/">
-      <span class="logo">磐田物語<span class="dot">。</span></span>
-      <span class="tag">遠江・見付のまちの歴史と文化</span>
-    </a>
-    <nav class="menu">
-      <a class="lead" href="#shiryo">佐口史料</a>
-      <a href="hajimeni.html">はじめに</a>
-      <a href="chizu.html">地図</a>
-      <a href="#kodai">古代</a>
-      <a href="#kaido">街道</a>
-      <a href="#shaji">社寺</a>
-      <a href="#matsuri">裸祭</a>
-      <a href="#machi">まち</a>
-      <a href="#kotoba">ことば</a>
-      <a href="#bunkazai">文化財</a>
-      <a href="#series">連載</a>
-      <a href="#about">このサイト</a>
-    </nav>
-  </div>
+<!-- ヘッダー -->
+<header class="site-header" id="header">
+<div class="container">
+<a href="#top" class="brand">
+<span class="mark">家</span>
+<span class="brand-name">実家じまい・空き家相談室<small>富士ヶ丘サービス株式会社</small></span>
+</a>
+<nav class="nav" id="nav">
+<a href="#worry">お悩み</a>
+<a href="#options">4つの選択肢</a>
+<a href="#service">できること</a>
+<a href="#price">料金</a>
+<a href="#faq">よくある質問</a>
+<a href="#contact" class="btn btn-line btn-sm">LINEで相談</a>
+</nav>
+<button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+</div>
 </header>
 
-<!-- ===== ヒーロー：佐口行正氏所蔵史料 ===== -->
-<section class="feature" id="shiryo">
-  <div class="inner">
-    <div>
-      <p class="eyebrow">佐口行正氏所蔵史料コレクション</p>
-      <h1>紙片が伝える、<br><span class="accent">見付のまちの記憶。</span></h1>
-      <p class="lead">見付の旧家・佐口行正氏が大切に守り伝えてきた、引札・浮世絵・古地図・絵葉書・屋台祭礼写真など約三百三十六点の史料。明治・大正・昭和の見付の暮らしと商いが、一枚ずつの紙片に色あざやかに残されている。</p>
-      <p class="credit">本コレクションはすべて佐口行正氏の所蔵であり、佐口行正氏のご厚意・ご許可を得て公開しています。無断転載・二次利用を禁じます。</p>
-      <div class="cta-row">
-        <a class="btn primary" href="saguchi-shiryo.html">史料を見る →</a>
-        <a class="btn ghost" href="saguchi-shiryo-catalog.html">目録から探す</a>
-      </div>
-    </div>
-    <div class="mosaic">
-      <figure class="tall"><img src="saguchi/img/ts-7.jpg" alt="浮世絵 美人東海道 見附駅 英泉"></figure>
-      <figure><img src="saguchi/img/hk-3.jpg" alt="引札 内山栄吉"></figure>
-      <figure><img src="saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻"></figure>
-      <figure class="wide"><img src="saguchi/img/hk-1.jpg" alt="引札 川島幸三郎"></figure>
-    </div>
-  </div>
+<!-- ヒーロー -->
+<section class="hero" id="top">
+<div class="container">
+<div class="hero-grid">
+<div class="hero-text">
+<span class="tag">🏡 磐田市・袋井市・掛川市・森町・浜松市一部</span>
+<h1>親の家、空き家になる前に。<br><span class="em">売る前に、まず一緒に整理しませんか。</span></h1>
+<p class="lead">親が施設に入った。相続した実家が空き家になった。<br>売るべきか、貸すべきか、解体すべきか、まだ決めきれない。</p>
+<p class="lead">富士ヶ丘サービスは、<b>介護と不動産の両方の視点</b>から、磐田市周辺の実家じまい・空き家・相続不動産のご相談をお受けしています。</p>
+<p class="note">強引な売却営業は行いません。まずは、ご家族の状況を一緒に整理するところから始めます。</p>
+<div class="hero-cta">
+<a href="#contact" class="btn btn-line">LINEで相談する</a>
+<a href="tel:0000000000" class="btn btn-tel">電話で相談する</a>
+<a href="#options" class="btn btn-outline">相談できることを見る</a>
+</div>
+<div class="hero-area">対応エリア：<b>磐田市・袋井市・掛川市・森町・浜松市一部</b></div>
+</div>
+<div class="hero-visual" aria-hidden="true">
+<div>
+<div class="house">🏠</div>
+<p>親が暮らした家には、<br>家族の記憶が残っています。</p>
+</div>
+<span class="ph-tag">※ ここに実家・家族を想起させる写真（hero.jpg）</span>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ===== 見どころギャラリー ===== -->
-<section class="gallery">
-  <div class="sec-head">
-    <p class="eyebrow">GALLERY ｜ 見どころ</p>
-    <h2>コレクションの見どころ</h2>
-    <p class="desc">色刷りの引札、見付を描いた浮世絵、絢爛な屋台の彫刻、祭りの絵葉書。一点ずつクリックすると、史料のページへ進みます。</p>
-  </div>
-  <div class="gal-grid">
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">浮世絵</span><img src="saguchi/img/ts-7.jpg" alt="美人東海道 見附駅 英泉"><figcaption><b>美人東海道 見附駅</b>渓斎英泉／見付を描いた浮世絵</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">浮世絵</span><img src="saguchi/img/ts-5.jpg" alt="東海道五十三次 見附 広重"><figcaption><b>東海道五十三次 見附</b>歌川広重／狂歌入</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-3.jpg" alt="引札 内山栄吉 明治42年"><figcaption><b>引札 内山栄吉</b>明治42年／色刷りの広告</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-2.jpg" alt="引札 久野米吉 明治34年"><figcaption><b>引札 久野米吉</b>明治34年</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">屋台彫刻</span><img src="saguchi/img/ph-3.jpg" alt="中川町 屋台彫刻"><figcaption><b>中川町 屋台</b>絢爛な祭屋台の彫刻</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">絵葉書</span><img src="saguchi/img/eh-10.jpg" alt="住吉船屋台 絵葉書"><figcaption><b>住吉船屋台</b>祭礼の絵葉書</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">引札</span><img src="saguchi/img/hk-1.jpg" alt="引札 川島幸三郎"><figcaption><b>引札 川島幸三郎</b>武者と美人の図</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">屋台彫刻</span><img src="saguchi/img/ph-2.jpg" alt="中川町 屋台彫刻"><figcaption><b>中川町 屋台</b>欄間の龍の彫刻</figcaption></a>
-    <a class="gal-item" href="saguchi-shiryo.html"><span class="gal-cat">絵葉書</span><img src="saguchi/img/eh-1.jpg" alt="はだか祭り 青年会員の正装 大正9年頃"><figcaption><b>裸祭の青年会員</b>大正9年頃の絵葉書</figcaption></a>
-  </div>
+<!-- お悩み -->
+<section class="section section--tint" id="worry">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">YOUR WORRIES</span>
+<h2>親の家のこと、ひとりで抱えていませんか。</h2>
+<p class="sub">ひとつでも当てはまったら、それは相談を始めてよいサインです。</p>
+</div>
+<div class="worry-grid">
+<div class="worry-card"><span class="q">?</span><span>親が施設に入り、実家が空き家になった</span></div>
+<div class="worry-card"><span class="q">?</span><span>相続した実家をどうするか決められない</span></div>
+<div class="worry-card"><span class="q">?</span><span>兄弟で意見がまとまらない</span></div>
+<div class="worry-card"><span class="q">?</span><span>家の中の荷物が多くて手がつかない</span></div>
+<div class="worry-card"><span class="q">?</span><span>解体するか売るか迷っている</span></div>
+<div class="worry-card"><span class="q">?</span><span>遠方で管理できない</span></div>
+<div class="worry-card"><span class="q">?</span><span>古い家でも売れるのかわからない</span></div>
+<div class="worry-card"><span class="q">?</span><span>まだ売る気持ちになれない</span></div>
+</div>
+</div>
 </section>
 
-<!-- ===== 佐口史料への2つの入口 ===== -->
-<section class="pri">
-  <div class="pri-grid">
-    <a class="pcard" href="saguchi-shiryo.html">
-      <span class="thumb"><img src="saguchi/img/ts-5.jpg" alt="史料本編"></span>
-      <span>
-        <h3>史料本編を読む</h3>
-        <p>引札・浮世絵・古地図・鉄道案内など、約200点の史料を解説とともに一点ずつ。</p>
-        <span class="go">紙片が伝える見付の記憶 →</span>
-      </span>
-    </a>
-    <a class="pcard" href="saguchi-shiryo-catalog.html">
-      <span class="thumb"><img src="saguchi/img/hk-2.jpg" alt="目録"></span>
-      <span>
-        <h3>目録から探す</h3>
-        <p>引札・絵葉書・屋台祭礼写真ほか約336点を、種別やグループで分類・検索できる目録。</p>
-        <span class="go">佐口行正氏所蔵史料 目録 →</span>
-      </span>
-    </a>
-  </div>
-</section>
+<!-- 4つの選択肢 -->
+<section class="section" id="options">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">FOUR OPTIONS</span>
+<h2>親の家には、売る以外の選択肢もあります。</h2>
+<p class="sub">売る・貸す・解体する・残す。どれが正解かは、ご家族によって違います。</p>
+</div>
+<div class="options-grid">
 
-<!-- ===== このサイトについて ===== -->
-<section class="about" id="about">
-  <div class="inner">
-    <figure class="ph" style="margin:0">
-      <img src="hero-mitsuke.jpg" alt="旧見付学校と淡海國玉神社">
-      <div class="cap">旧見付学校（手前）と淡海國玉神社の鳥居 ── 見付のまちのシンボル</div>
-    </figure>
-    <div>
-      <p class="label">このサイトについて<span class="en">ABOUT</span></p>
-      <p>磐田物語は、静岡県磐田市に積み重ねられてきた歴史と文化を、一市民の視点で掘り起こし、書き留めていく場である。遠江国の国府が置かれ、東海道・見付宿として栄えたこの地には、古代の遺跡から宿場の面影、祭りや暮らしの記憶まで、語り継ぐべきものが数多く眠っている。</p>
-      <p>その中心に据えているのが、見付の旧家・佐口行正氏が守り伝えてきた史料コレクションである。郷土の史料と現地の風景をたどりながら、足もとの歴史を見つめ直し、次の世代へと手渡していくための覚え書きとして綴っていく。</p>
-      <p style="font-size:14.5px;margin-top:20px;"><a href="hajimeni.html" style="font-weight:700;">はじめに ──このサイトを始めた理由</a>　／　<a href="chizu.html" style="font-weight:700;">磐田タイムトラベル地図で旅する</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 古代の磐田 ===== -->
-<section class="section" id="kodai">
-  <div class="sec-head">
-    <p class="eyebrow">ANCIENT IWATA</p>
-    <h2>古代の磐田 ── 国府・国分寺・古墳</h2>
-    <p class="desc">奈良時代、磐田は遠江国の中心だった。国府と国分寺が置かれ、台地には王たちの古墳が築かれた。まちの始まりの記憶をたどる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="totoumi-kokufu.html"><span class="num">遠江国府</span><h3>遠江国府と古代の磐田</h3><p>国府が置かれ、約66メートルの七重塔がそびえた古代磐田の姿を史跡からたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="totoumi-kokubunji.html"><span class="num">特別史跡</span><h3>遠江国分寺跡と、古代磐田のはじまり</h3><p>七重塔と金堂を備えた奈良時代の特別史跡。古代寺院の跡をたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="kofun.html"><span class="num">古墳</span><h3>古墳から見る磐田</h3><p>なぜ磐田に古墳が多いのか。台地と川がつくった、王たちの土地を考える。</p><span class="go">読む →</span></a>
-    <a class="card" href="choshizuka-kofun.html"><span class="num">前方後円墳</span><h3>銚子塚古墳と、遠江を治めた王の眠り</h3><p>全長約110メートル、県内第3位。4世紀の遠江を治めた豪族の墓。</p><span class="go">読む →</span></a>
-    <a class="card" href="goten-ninomiya-iseki.html"><span class="num">遺跡</span><h3>御殿・二之宮遺跡と、二つの時代が眠る原</h3><p>古代の国府候補地にして、徳川家康が築いた中泉御殿の跡。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 東海道・宿場・街道 ===== -->
-<section class="section" id="kaido">
-  <div class="sec-head">
-    <p class="eyebrow">TOKAIDO &amp; ROADS</p>
-    <h2>東海道・宿場・街道</h2>
-    <p class="desc">東海道五十三次の見付宿を中心に、姫街道・池田の渡し・掛塚湊、そして街道を舞台にした合戦まで。人と物が行き交った道の記憶。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-shuku.html"><span class="num">見付宿</span><h3>東海道・見付宿の面影</h3><p>中世から栄えた東海道屈指の宿場町。今に残る面影を旧東海道にたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="mitsuke-shuku-tokaido.html"><span class="num">宿場</span><h3>見付宿と、東海道のにぎわいの記憶</h3><p>本陣2・脇本陣1・旅籠56。東海道二十八番目の宿のにぎわい。</p><span class="go">読む →</span></a>
-    <a class="card" href="hime-kaido.html"><span class="num">脇街道</span><h3>姫街道と、見付から分かれるもう一つの道</h3><p>関所と今切の渡しを避けた人々が歩いた本坂通を、起点・見付からたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="ikeda-watashi.html"><span class="num">渡し</span><h3>池田の渡し ── 天竜川をわたる東海道</h3><p>東海道の難所・天竜川の渡船。中世の池田荘から明治の架橋まで。</p><span class="go">読む →</span></a>
-    <a class="card" href="kaketsuka-minato.html"><span class="num">湊町</span><h3>掛塚湊と、遠州の小江戸とよばれたまち</h3><p>天竜川河口に栄えた廻船の湊。材木を江戸へ運んだ繁栄の記憶。</p><span class="go">読む →</span></a>
-    <a class="card" href="nakaizumi-daikan.html"><span class="num">代官所</span><h3>中泉代官所と、徳川の天領を治めたまち</h3><p>家康の中泉御殿と天領の代官所。名代官・林鶴梁や前島密の足跡。</p><span class="go">読む →</span></a>
-    <a class="card" href="hitokotozaka.html"><span class="num">合戦</span><h3>一言坂の戦いと、本多忠勝の殿（しんがり）</h3><p>武田信玄の大軍を相手にした退き戦と「家康に過ぎたるもの」の落首。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 社寺と信仰 ===== -->
-<section class="section" id="shaji">
-  <div class="sec-head">
-    <p class="eyebrow">SHRINES &amp; TEMPLES</p>
-    <h2>社寺と信仰</h2>
-    <p class="desc">国府の守り神から伊勢の御厨、国総社まで。まちの暮らしに根づいた信仰と、その由緒・祭礼をたどる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-tenjin.html"><span class="num">見付天神</span><h3>見付天神と、霊犬悉平太郎のものがたり</h3><p>矢奈比賣神社。霊犬悉平太郎の伝説と、見付宿の鎮守として続く信仰。</p><span class="go">読む →</span></a>
-    <a class="card" href="oumikunitama-jinja.html"><span class="num">国総社</span><h3>淡海國玉神社と、遠江の神々が集うまち</h3><p>国司が国じゅうの神を一度に拝した遠江国の総社。旧見付学校の隣に建つ。</p><span class="go">読む →</span></a>
-    <a class="card" href="fu-hachimangu.html"><span class="num">国府の守り神</span><h3>府八幡宮と、国府のまちの守り神</h3><p>奈良時代に勧請された古社。寛永の楼門は静岡県指定文化財。</p><span class="go">読む →</span></a>
-    <a class="card" href="kamada-shinmei.html"><span class="num">遠州のお伊勢さま</span><h3>鎌田神明宮 ── 遠州のお伊勢さま</h3><p>伊勢神宮領「鎌田御厨」の総鎮守。20年ごとの式年遷宮を伝える。</p><span class="go">読む →</span></a>
-    <a class="card" href="gyokoji-fuji.html"><span class="num">天然記念物</span><h3>行興寺と熊野（ゆや）の長藤</h3><p>国指定天然記念物・推定樹齢約850年の藤。熊野御前と能『熊野』の舞台。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 見付天神裸祭【特集】 ===== -->
-<section class="section" id="matsuri">
-  <div class="sec-head">
-    <p class="eyebrow">HADAKA MATSURI ｜ 特集</p>
-    <h2>見付天神裸祭【特集】</h2>
-    <p class="desc">漆黒の闇に渡る国指定重要無形民俗文化財。その全体像を、起源・神事・伝説・継承の四つの視点から、史実と伝承を分けて学術的にまとめた特集。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="mitsuke-tenjin-hadaka-matsuri.html"><span class="badge feature">特集トップ</span><h3>見付天神裸祭 ── 闇に渡る、遠江総社への神事</h3><p>約8日間の祓いと清め、鬼踊り、闇の渡御。全体像をまとめた決定版資料。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-kigen.html"><span class="num">起源</span><h3>起源をめぐる三つの説 ── 歓喜・人身御供・反閇</h3><p>勧請への歓喜説、悉平太郎説、谷部真吾の反閇説。起源の謎を検証する。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-shinji.html"><span class="num">神事</span><h3>神事の構造と日程 ── 八日間の祓いと、闇の渡御</h3><p>祭事始から堂入り・鬼踊り・闇の神輿渡御まで。四つの梯団と祭組を解説。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-shippei.html"><span class="num">伝説</span><h3>悉平太郎伝説の考察 ── 早太郎との異同と猿神退治の系譜</h3><p>光前寺の早太郎との異同、猿神退治譚の類型、表記の歴史的変遷を整理。</p><span class="go">読む →</span></a>
-    <a class="card" href="hadaka-matsuri-hozon.html"><span class="num">継承</span><h3>無形文化財としての継承 ── 受け継がれる祭りの現在</h3><p>2000年の国指定、コロナ禍の縮小と再開、担い手不足という現代の課題。</p><span class="go">読む →</span></a>
-    <a class="card" href="matsuri-kurashi.html"><span class="num">エッセイ</span><h3>祭りと暮らしの記憶</h3><p>天下の奇祭をめぐり、まちに受け継がれてきた祭りと暮らしの記憶をたどる。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== まちの近代と学び ===== -->
-<section class="section" id="machi">
-  <div class="sec-head">
-    <p class="eyebrow">MODERN TOWN</p>
-    <h2>まちの近代と学び</h2>
-    <p class="desc">学びのまち磐田を象徴する建物と、世界を見た人がこのまちに残した記憶。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="kyu-mitsuke-gakko.html"><span class="num">擬洋風建築</span><h3>旧見付学校と、学びのまち磐田</h3><p>現存最古の木造擬洋風小学校校舎「見付の五階」。学びのまちの記憶。</p><span class="go">読む →</span></a>
-    <a class="card" href="kyu-akamatsuke.html"><span class="num">赤レンガ</span><h3>旧赤松家と、海をわたった見付の人</h3><p>咸臨丸で渡米し近代日本の造船を築いた赤松則良の邸宅跡。</p><span class="go">読む →</span></a>
-  </div>
-</section>
-
-<!-- ===== 地名とことば ===== -->
-<section class="section" id="kotoba">
-  <div class="sec-head">
-    <p class="eyebrow">PLACE NAMES &amp; DIALECT</p>
-    <h2>地名とことば</h2>
-    <p class="desc">国・街道・信仰が名づけたまちの地名と、遠州のことば。辞典と変換ツールで、土地のことばに触れる。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="iwata-chimei.html"><span class="num">地名</span><h3>磐田の地名をたどる ── 国・街道・信仰が名づけたまち</h3><p>見付・国府台・中泉・二之宮・鎌田。地名の由来を三つの流れからたどる。</p><span class="go">読む →</span></a>
-    <a class="card" href="enshu-ben.html"><span class="badge tool">辞典</span><h3>遠州弁辞典</h3><p>磐田・中遠の遠州弁を、意味・用例つきで検索。語尾や文法の特徴もまとめた。</p><span class="go">ひく →</span></a>
-    <a class="card" href="henkan.html"><span class="badge tool">ツール</span><h3>標準語⇄遠州弁 変換</h3><p>標準語を遠州弁に変換。ふつう／ガチの2モードで言い回しを試せる。</p><span class="go">使う →</span></a>
-  </div>
-</section>
-
-<!-- ===== 文化財を読む ===== -->
-<section class="section" id="bunkazai">
-  <div class="sec-head">
-    <p class="eyebrow">CULTURAL PROPERTIES</p>
-    <h2>文化財を読む ── 資料とデータ</h2>
-    <p class="desc">磐田の文化財を、観光名所としてではなく「地域の記憶を読み解く手がかり」として整理する。一覧・データ・研究ノートの入口。</p>
-  </div>
-  <div class="grid">
-    <a class="card" href="bunkazai.html"><span class="badge feature">入口</span><h3>磐田の文化財と地域の記憶</h3><p>古墳・国分寺跡・旧街道・寺社・祭礼・学校から土地の歴史をたどる文化財群の入口。</p><span class="go">開く →</span></a>
-    <a class="card" href="shitei.html"><span class="num">一覧</span><h3>磐田市の指定文化財一覧</h3><p>国・県・市・登録・無形民俗を横断検索。区分・時代・種別・キーワードで絞り込み。</p><span class="go">さがす →</span></a>
-    <a class="card" href="kuni-shitei.html"><span class="num">国指定</span><h3>磐田市の国指定文化財</h3><p>遠江国分寺跡、銚子塚古墳、旧見付学校、見付天神裸祭ほか8件を読み解く。</p><span class="go">読む →</span></a>
-    <a class="card" href="maizobunkazai.html"><span class="num">埋蔵文化財</span><h3>土地と遺跡を調べる ── 埋蔵文化財と磐田</h3><p>土地を売る・買う・建てるとき、なぜ遺跡の確認が必要か。やさしく解説。</p><span class="go">読む →</span></a>
-    <a class="card" href="dayori.html"><span class="num">資料集</span><h3>磐田の文化財を深く読む資料集</h3><p>いわた文化財だより、旧赤松家だより、文書館だよりなど、一次資料への入口。</p><span class="go">開く →</span></a>
-    <a class="card" href="research-notes.html"><span class="num">研究ノート</span><h3>磐田文化財研究ノート</h3><p>古いはがきの場所の特定、旧道との比較など、調査途中のメモを蓄積する場。</p><span class="go">のぞく →</span></a>
-  </div>
-</section>
-
-<!-- ===== 連載：見付古地図散歩 ===== -->
-<div class="series-sec">
-  <section class="section" id="series" style="padding-bottom:0;">
-    <div class="sec-head">
-      <p class="eyebrow">SERIES</p>
-      <h2>連載：見付古地図散歩</h2>
-    </div>
-    <p class="series-intro">明治四十二年一月に調査された『見付町戸別明細圖』を一枚ずつ読み解きながら、見付という町に積み重なってきた土地と暮らしの記憶をたどる連載です。全五回。</p>
-    <div class="grid">
-      <a class="card" href="kai1.html"><span class="num">第一回</span><h3>見付の土地と記憶</h3><p>戸別明細図の全体像と、町別シート全17枚の一覧。シリーズの導入。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai2.html"><span class="num">第二回</span><h3>古い地図に残る家並みと、相続される土地</h3><p>一軒ずつ記された名前を入口に、受け継がれてきた家を見つめ直す。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai3.html"><span class="num">第三回</span><h3>古い町の土地を売るとき、なぜ調査が大切なのか</h3><p>幅員・接道・再建築・境界・上下水道。宿場町の土地の論点を読む。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai4.html"><span class="num">第四回</span><h3>明治42年、見付の町の中枢</h3><p>郡役所・登記所・寺社・学校。町の成り立ちから土地の価値を考える。</p><span class="go">読む →</span></a>
-      <a class="card" href="kai5.html"><span class="num">第五回</span><h3>見付の古い家を手放す前に、知っておきたいこと</h3><p>相続登記・境界・空き家管理ほか。歴史の語りから実務へ着地する。</p><span class="go">読む →</span></a>
-    </div>
-  </section>
+<div class="option-card">
+<div class="head"><span class="icon">💰</span><div><span class="label">OPTION 01</span><h3>売る</h3></div></div>
+<div class="body">
+<h4>向いている人</h4>
+<ul><li>今後使う予定がない</li><li>管理負担を減らしたい</li><li>相続人で方針がまとまっている</li><li>施設費用や生活費に充てたい</li></ul>
+<hr>
+<h4>注意点</h4>
+<ul><li>価格だけで決めない</li><li>残置物・境界・建物状態の整理が必要</li><li>契約不適合責任や引渡し条件の確認が重要</li></ul>
+</div>
 </div>
 
-<footer class="im-foot">
-<style>
-.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
-.im-foot *{box-sizing:border-box;}
-.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
-.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
-.im-foot .im-brand .im-dot{color:#a6713e;}
-.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
-.im-foot .im-links{width:100%;margin-top:6px;}
-.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
-.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
-.im-foot .im-links li{font-size:13px;line-height:1.6;}
-.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
-.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
-.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
-.im-foot .im-sns{width:100%;margin-top:20px;}
-.im-foot .im-icons{display:flex;gap:14px;}
-.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
-.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
-.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
-.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
-</style>
-  <div class="im-inner">
-    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
-    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
-    <div class="im-links">
-      <p class="im-lh">大石浩之の活動</p>
-      <ul>
-        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
-        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
-        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
-        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
-        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
-      </ul>
-      <div class="im-sns">
-        <p class="im-lh">SNS</p>
-        <div class="im-icons">
-          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
-  </div>
+<div class="option-card">
+<div class="head"><span class="icon">🔑</span><div><span class="label">OPTION 02</span><h3>貸す</h3></div></div>
+<div class="body">
+<h4>向いている人</h4>
+<ul><li>将来戻る可能性がある</li><li>建物状態が比較的よい</li><li>継続収入を得たい</li></ul>
+<hr>
+<h4>注意点</h4>
+<ul><li>修繕費がかかる</li><li>賃貸管理が必要</li><li>古い家は貸す前の改修費が大きくなる可能性</li></ul>
+</div>
+</div>
+
+<div class="option-card">
+<div class="head"><span class="icon">🏗️</span><div><span class="label">OPTION 03</span><h3>解体する</h3></div></div>
+<div class="body">
+<h4>向いている人</h4>
+<ul><li>建物状態が悪い</li><li>倒壊や近隣迷惑のリスクがある</li><li>土地として売った方がよい場合</li></ul>
+<hr>
+<h4>注意点</h4>
+<ul><li>解体費用がかかる</li><li>固定資産税の変化に注意</li><li>補助金や制度の確認が必要</li></ul>
+</div>
+</div>
+
+<div class="option-card">
+<div class="head"><span class="icon">🌿</span><div><span class="label">OPTION 04</span><h3>残す・管理する</h3></div></div>
+<div class="body">
+<h4>向いている人</h4>
+<ul><li>まだ家族で結論が出ていない</li><li>思い出の整理に時間が必要</li><li>親の意思確認が必要</li></ul>
+<hr>
+<h4>注意点</h4>
+<ul><li>草木・雨漏り・防犯・近隣対応が必要</li><li>管理費用がかかる</li><li>放置すると老朽化が進む</li></ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- できること -->
+<section class="section section--tint" id="service">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">WHAT WE DO</span>
+<h2>介護と不動産の両方から、親の家のこれからを整理します。</h2>
+<p class="sub">「何から手をつければいいか」から、一緒に考えます。</p>
+</div>
+<div class="do-grid">
+<div class="do-item"><span class="ck">✓</span>親が施設に入った後の実家相談</div>
+<div class="do-item"><span class="ck">✓</span>相続した実家の整理</div>
+<div class="do-item"><span class="ck">✓</span>空き家管理</div>
+<div class="do-item"><span class="ck">✓</span>売却査定・現況売却・解体更地売却</div>
+<div class="do-item"><span class="ck">✓</span>家財整理の相談</div>
+<div class="do-item"><span class="ck">✓</span>相続登記の専門家紹介</div>
+<div class="do-item"><span class="ck">✓</span>税務相談の専門家紹介</div>
+<div class="do-item"><span class="ck">✓</span>測量・境界の相談</div>
+<div class="do-item"><span class="ck">✓</span>兄弟姉妹との話し合い資料作成</div>
+<div class="do-item"><span class="ck">✓</span>介護費用と不動産売却の考え方</div>
+</div>
+</div>
+</section>
+
+<!-- 選ばれる理由 -->
+<section class="section section--blue" id="reasons">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">WHY US</span>
+<h2>普通の不動産会社とは、少し違います。</h2>
+</div>
+<div class="reasons-grid">
+<div class="reason-card"><div class="num">REASON 01</div><h3>介護の現場を知っている</h3><p>サービス付き高齢者向け住宅やデイサービスを運営。施設入居後の実家問題を、現場感覚で理解できます。</p></div>
+<div class="reason-card"><div class="num">REASON 02</div><h3>不動産売却まで対応できる</h3><p>査定・媒介・契約・決済まで、宅建業者として実務を担えます。相談から実行まで一貫対応。</p></div>
+<div class="reason-card"><div class="num">REASON 03</div><h3>売却ありきではない</h3><p>売る・貸す・解体する・残すを公平に整理。今すぐ売る必要はありません。</p></div>
+<div class="reason-card"><div class="num">REASON 04</div><h3>地域密着で動ける</h3><p>磐田市周辺で現地確認・近隣対応・行政調査まで小回りがききます。</p></div>
+<div class="reason-card"><div class="num">REASON 05</div><h3>専門家につなげる</h3><p>登記・税務・測量・解体など、必要に応じて司法書士・税理士等の専門家と連携します。</p></div>
+<div class="reason-card"><div class="num">REASON 06</div><h3>家と地域の記憶を大切に</h3><p>「磐田物語」を通じて、家や地域の記憶を残す取り組みを続けています。</p></div>
+</div>
+</div>
+</section>
+
+<!-- 重要事項 -->
+<section class="section" id="disclosure">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">BEFORE YOU SELL</span>
+<h2>実家や空き家は、売る前の確認が大切です。</h2>
+</div>
+<div class="disclosure-wrap">
+<div class="disclosure-text">
+<p class="lead">査定額だけを見て進めると、後から思わぬ問題が出ることがあります。</p>
+<p>特に古い家や長く空き家だった物件では、建物の状態、境界、越境、残置物、道路、私道、再建築、法令制限、上下水道などを事前に整理しておくことが大切です。</p>
+<p>重要事項説明書は本来、買主に説明する書面ですが、<b>売主にとっても「売る前の備え」のチェックリスト</b>になります。</p>
+<div class="callout">
+<p>古い実家や空き家を売る前に、何を確認すればよいか一緒に整理します。売ると決めていなくても、まずはご相談ください。</p>
+<a href="important-disclosure.html" class="btn btn-tel btn-sm">重要事項ガイドを読む</a>
+<a href="#contact" class="btn btn-outline btn-sm">LINEで状況を送る</a>
+</div>
+</div>
+<div class="disclosure-table">
+<table class="checklist">
+<tr><th>建物</th><td>劣化、雨漏り、シロアリ、設備、契約不適合責任</td></tr>
+<tr><th>敷地</th><td>境界、越境、測量図、ブロック塀、庭木</td></tr>
+<tr><th>残置物</th><td>撤去するもの、残すもの、買主と合意するもの</td></tr>
+<tr><th>道路</th><td>接道状況、道路幅員、再建築の可否、セットバック</td></tr>
+<tr><th>私道</th><td>通行承諾、掘削承諾、私道負担</td></tr>
+<tr><th>法令</th><td>用途地域、市街化調整区域、建築制限</td></tr>
+<tr><th>インフラ</th><td>上下水道、ガス、浄化槽、引込み状況</td></tr>
+<tr><th>引渡し</th><td>現況渡しの範囲、引渡し時期、特約</td></tr>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 料金 -->
+<section class="section section--tint" id="price">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">PRICE</span>
+<h2>無料でできること、有料になることを明確にしています。</h2>
+<p class="sub">どこまでが無料で、どこからが有料か。最初にはっきりお伝えします。</p>
+</div>
+<table class="price-table">
+<thead><tr><th>内容</th><th style="text-align:right">料金目安</th></tr></thead>
+<tbody>
+<tr><td>30分無料相談</td><td class="price">0円</td></tr>
+<tr><td>簡易方向性整理</td><td class="price">0円</td></tr>
+<tr><td>現地診断レポート</td><td class="price">33,000円(税込)〜</td></tr>
+<tr><td>家族会議用資料作成</td><td class="price">55,000円(税込)〜</td></tr>
+<tr><td>空き家管理</td><td class="price">月額5,500円(税込)〜</td></tr>
+<tr><td>売却前の家の記憶保存パック</td><td class="price">55,000〜110,000円(税込)</td></tr>
+<tr><td>実家じまい相談パック</td><td class="price">55,000円(税込)〜</td></tr>
+<tr><td>売却仲介</td><td class="price">宅建業法に基づく仲介手数料</td></tr>
+</tbody>
+</table>
+<p class="price-note">無料相談では、今後の進め方を一緒に整理します。現地への訪問、詳細調査、写真付きレポート、親族説明用資料の作成は、有料サービスとして承ります。<br>売却をご依頼いただく場合は、通常の不動産仲介業務として対応します。税務・登記・法律判断については、必要に応じて税理士・司法書士・弁護士等の専門家をご紹介します。</p>
+</div>
+</section>
+
+<!-- 流れ -->
+<section class="section" id="flow">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">FLOW</span>
+<h2>ご相談の流れ</h2>
+</div>
+<div class="flow">
+<div class="flow-item"><div class="flow-body"><h3>LINE・電話・フォームで相談</h3><p>気になることを一言だけでも大丈夫です。</p></div></div>
+<div class="flow-item"><div class="flow-body"><h3>30分無料相談で状況整理</h3><p>ご家族の状況・実家の状態をお聞きします。</p></div></div>
+<div class="flow-item"><div class="flow-body"><h3>売る・貸す・解体・残すの方向性確認</h3><p>選択肢を公平に並べて整理します。</p></div></div>
+<div class="flow-item"><div class="flow-body"><h3>必要に応じて現地診断・専門家紹介</h3><p>有料サービスや専門家連携はここから。</p></div></div>
+<div class="flow-item"><div class="flow-body"><h3>家族会議・相続登記・整理・管理・売却へ</h3><p>ご家族が納得したうえで、次の一歩へ進みます。</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--tint" id="faq">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">FAQ</span>
+<h2>よくある質問</h2>
+</div>
+<div class="faq">
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>まだ売ると決めていなくても相談できますか。</button><div class="faq-a"><p>はい。売却前提でなくても大丈夫です。売る・貸す・残す・解体する選択肢を整理するための相談です。</p></div></div>
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>親がまだ住んでいても相談できますか。</button><div class="faq-a"><p>はい。むしろ、空き家になる前の相談をおすすめしています。親御様の意思確認や今後の生活設計も含めて考えやすくなります。</p></div></div>
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>荷物がそのままでも相談できますか。</button><div class="faq-a"><p>はい。家財整理の進め方や、売却前に片付けるべきもの、残してよいものを整理できます。</p></div></div>
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>相続登記が終わっていなくても相談できますか。</button><div class="faq-a"><p>一般的な流れは整理できます。登記手続きが必要な場合は、司法書士等の専門家をご紹介します。</p></div></div>
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>税金の相談もできますか。</button><div class="faq-a"><p>一般的な制度の概要はご説明できますが、個別の税務判断は税理士等の専門家に確認します。</p></div></div>
+<div class="faq-item"><button class="faq-q"><span class="qmark">Q.</span>相談後に営業されませんか。</button><div class="faq-a"><p>強引な売却営業は行いません。ご家族にとって必要な選択肢を整理し、次に必要な行動をご提案します。</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- 代表メッセージ -->
+<section class="section" id="message">
+<div class="container">
+<div class="message-wrap">
+<div class="message-photo">
+<div><div class="figure">👤</div>※ 代表の写真<br>（oishi.jpg）</div>
+</div>
+<div class="message-body">
+<h2>家は、ただの不動産ではありません。</h2>
+<p>親が暮らした家、家族が集まった家、思い出が残る家。実家や空き家の相談は、単に価格を出せば終わる話ではありません。</p>
+<p>富士ヶ丘サービスは、介護事業と不動産事業の両方を行っている会社です。親御様の施設入居、ご家族の負担、相続した家の整理、空き家の管理、売却や解体まで、現実的な問題を一緒に整理します。</p>
+<p>すぐに売る必要はありません。まずは、ご家族の状況をお聞かせください。売る、貸す、残す、解体する。どの選択がよいか、一緒に考えていきます。</p>
+<p class="sign">富士ヶ丘サービス株式会社<small>代表取締役 大石 浩之</small></p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 相続はじめ・空き家相談室への相互リンク -->
+<section class="section" id="souzoku-link">
+<div class="container">
+<div class="iwata-banner">
+<div>
+<h3>すでに相続が発生した方はこちら</h3>
+<p>相続登記・名義・兄弟姉妹の話し合い・残置物・境界・解体・空き家管理・売却まで、相続発生後の不動産整理は「相続はじめ・空き家相談室」で詳しくご案内しています。</p>
+</div>
+<a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" class="btn btn-tel">相続はじめ・空き家相談室を見る</a>
+</div>
+</div>
+</section>
+
+<!-- 磐田物語バナー -->
+<section class="section section--tint" id="iwata">
+<div class="container">
+<div class="iwata-banner">
+<div>
+<h3>家の記憶を、地域の記憶として残す取り組み</h3>
+<p>富士ヶ丘サービスでは、磐田の歴史や暮らしの記憶を残す「磐田物語」を運営しています。実家を売る・解体する・手放す前に、家族の思い出や地域の記憶を残しておきたい方には、写真や文章で記録するご提案も行っています。</p>
+</div>
+<a href="#" class="btn btn-outline">磐田物語を見る</a>
+</div>
+</div>
+</section>
+
+<!-- 最終CTA -->
+<section class="section section--blue final-cta" id="contact">
+<div class="container">
+<h2>親の家のこと、今のうちに一緒に整理しませんか。</h2>
+<p>相談だけでも大丈夫です。売却を無理にすすめることはありません。</p>
+<div class="hero-cta">
+<a href="#" class="btn btn-line">LINEで相談する</a>
+<a href="tel:0000000000" class="btn btn-tel">電話で相談する</a>
+<a href="contact.html" class="btn btn-ghost-light">問い合わせフォーム</a>
+</div>
+<p class="small">対応エリア：磐田市・袋井市・掛川市・森町・浜松市一部 ／ 受付時間 9:00〜18:00（水曜・日曜予約営業）</p>
+</div>
+</section>
+
+<!-- 会社情報 -->
+<section class="section" id="company">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">COMPANY</span>
+<h2>会社情報</h2>
+</div>
+<table class="company-table">
+<tr><th>会社名</th><td>富士ヶ丘サービス株式会社</td></tr>
+<tr><th>事業内容</th><td>不動産売買・仲介・管理／介護事業（サービス付き高齢者向け住宅・デイサービス等）</td></tr>
+<tr><th>所在地</th><td>静岡県磐田市見付5789-1 </td></tr>
+<tr><th>電話</th><td>0538-31-3308</td></tr>
+<tr><th>宅地建物取引業</th><td>静岡県知事免許（2）第14083号　</td></tr>
+<tr><th>代表者</th><td>代表取締役 大石 浩之</td></tr>
+<tr><th>対応エリア</th><td>磐田市・袋井市・掛川市・森町・浜松市一部</td></tr>
+</table>
+</div>
+</section>
+
+<!-- フッター -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<h4>ふじがおか 実家じまい・空き家相談室</h4>
+<p>親の家、相続した実家、空き家のこと。<br>売る前に、まず一緒に整理しませんか。</p>
+</div>
+<div>
+<h4>メニュー</h4>
+<ul class="footer-links">
+<li><a href="#worry">こんなお悩み</a></li>
+<li><a href="#options">4つの選択肢</a></li>
+<li><a href="#service">できること</a></li>
+<li><a href="#price">料金</a></li>
+<li><a href="#faq">よくある質問</a></li>
+</ul>
+</div>
+<div>
+<h4>関連サイト</h4>
+<ul class="footer-links">
+<li><a href="#">富士ヶ丘サービス 公式サイト</a></li>
+<li><a href="#">富士ヶ丘サービス 不動産ページ</a></li>
+<li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/">相続はじめ・空き家相談室</a></li>
+<li><a href="#">磐田物語</a></li>
+<li><a href="important-disclosure.html">重要事項ガイド</a></li>
+</ul>
+</div>
+<div>
+<h4>相談する</h4>
+<ul class="footer-links">
+<li><a href="#">LINEで相談</a></li>
+<li><a href="tel:0000000000">電話で相談</a></li>
+<li><a href="contact.html">問い合わせフォーム</a></li>
+<li><a href="privacy-policy.html">プライバシーポリシー</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">© 富士ヶ丘サービス株式会社 ふじがおか 実家じまい・空き家相談室</div>
+</div>
 </footer>
 
+<!-- スマホ追従CTA -->
+<div class="sticky-cta">
+<a href="#contact" class="btn btn-line">LINEで相談</a>
+<a href="tel:0000000000" class="btn btn-tel">電話する</a>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
