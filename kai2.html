@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古い地図に残る家並みと、相続される土地 ― 見付古地図散歩 第2回</title>
+<meta name="description" content="明治42年の見付町戸別明細図には、街道や小路に沿って一軒ずつ世帯名が記されている。受け継がれてきた家並みを入口に、相続した家や空き家を「処分」ではなく「受け継いだもの」として見つめ直す。磐田市見付の相続不動産相談。">
+<style>
+  :root{--ink:#2b2622;--ink-soft:#5a514a;--paper:#f7f2e7;--paper-2:#fbf8f0;--line:#d9cdb6;--accent:#2f6b46;--accent-soft:#e7efe7;--seal:#9b3b2f;--maxw:880px;}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);background:var(--paper);font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;line-height:1.95;font-size:17px;letter-spacing:.02em;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .seriesnav{background:#efe7d4;border-bottom:1px solid var(--line);font-family:sans-serif;font-size:13px}
+  .seriesnav .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 22px;align-items:center}
+  .seriesnav a{color:var(--accent);text-decoration:none}
+  .seriesnav a:hover{text-decoration:underline}
+  .seriesnav .now{color:var(--ink-soft)}
+  header.hero{background:linear-gradient(180deg,#efe7d4 0%,var(--paper) 100%);border-bottom:1px solid var(--line);padding:46px 0 34px;}
+  .series-tag{display:inline-block;font-size:13px;letter-spacing:.32em;color:var(--accent);border:1px solid var(--accent);border-radius:2px;padding:5px 14px;margin-bottom:20px;}
+  header.hero h1{font-size:28px;line-height:1.5;margin:0 0 14px;font-weight:600;}
+  header.hero .sub{font-size:16px;color:var(--ink-soft);margin:0}
+  .cover-fig{margin:28px 0 0;text-align:center}
+  .cover-fig img{max-width:100%;border:1px solid var(--line);box-shadow:0 8px 26px rgba(60,45,25,.15);cursor:zoom-in;}
+  .cover-fig figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px}
+  main{padding:8px 0 10px}
+  .lead{background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--accent);padding:22px 26px;margin:36px 0;font-size:16.5px;color:#3c352e;}
+  h2{font-size:21px;margin:50px 0 8px;padding:0 0 0 14px;border-left:6px solid var(--accent);line-height:1.5;}
+  h2 .en{display:block;font-size:11px;letter-spacing:.28em;color:var(--accent);font-family:sans-serif;margin-bottom:4px}
+  p{margin:14px 0}
+  figure.plate{margin:30px 0;text-align:center}
+  figure.plate img{max-width:100%;border:1px solid var(--line);box-shadow:0 6px 20px rgba(60,45,25,.12);cursor:zoom-in;}
+  figure.plate figcaption{font-size:13px;color:var(--ink-soft);margin-top:9px;line-height:1.6}
+  .pull{font-size:19px;color:var(--accent);text-align:center;margin:34px auto;max-width:660px;line-height:1.8;}
+  .cta{background:var(--accent);color:#fff;border-radius:4px;padding:34px 30px;margin:46px 0 24px;text-align:center;}
+  .cta p{color:#eef5ee;margin:8px auto 20px;max-width:620px}
+  .cta .big{font-size:20px;color:#fff;margin:0 0 6px}
+  .btn{display:inline-block;margin:6px;padding:13px 26px;border-radius:3px;background:#fff;color:var(--accent);text-decoration:none;font-size:15px;border:1px solid #fff;}
+  .btn.ghost{background:transparent;color:#fff}
+  .nextprev{display:flex;justify-content:space-between;gap:14px;margin:30px 0 0;font-family:sans-serif;font-size:14px}
+  .nextprev a{flex:1;border:1px solid var(--line);border-radius:4px;padding:16px 18px;text-decoration:none;color:var(--ink);background:var(--paper-2)}
+  .nextprev a:hover{border-color:var(--accent)}
+  .nextprev small{display:block;color:var(--accent);font-size:12px;margin-bottom:4px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 60px;color:var(--ink-soft);font-size:13.5px}
+  footer h3{font-size:14px;color:var(--ink);margin:0 0 8px;letter-spacing:.1em}
+  footer p{margin:7px 0}
+  #lb{position:fixed;inset:0;background:rgba(24,18,12,.93);display:none;z-index:99;cursor:zoom-out;padding:24px}
+  #lb.on{display:flex;flex-direction:column;align-items:center;justify-content:center}
+  #lb img{max-width:96%;max-height:84%;object-fit:contain;box-shadow:0 0 40px rgba(0,0,0,.6)}
+  #lb .cap{color:#f1e9da;font-size:14px;margin-top:14px;text-align:center;max-width:90%}
+  #lb .hint{color:#b8ad99;font-size:12px;margin-top:6px}
+  @media(max-width:640px){header.hero h1{font-size:22px} body{font-size:16px} .nextprev{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav class="seriesnav"><div class="wrap">
+  <span>見付古地図散歩｜</span>
+  <a href="kai1.html">第1回</a>
+  <span class="now">第2回 相続される土地</span>
+  <a href="kai3.html">第3回</a>
+  <a href="kai4.html">第4回</a>
+  <a href="kai5.html">第5回</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="series-tag">見付古地図散歩 ＞ 第二回</span>
+    <h1>古い地図に残る家並みと、<br>相続される土地</h1>
+    <p class="sub">一軒ずつ記された名前は、長く受け継がれてきた家のしるしである。</p>
+    <figure class="cover-fig">
+      <img src="images/11_higashizaka.jpg" data-cap="「東坂」 ― 街道沿いに、一軒ずつ世帯名が記されている。" alt="見付町戸別明細図 東坂">
+      <figcaption>『見付町戸別明細圖』より「東坂」 ― 街道に沿って一軒ずつ家が書き込まれている（佐口行正氏 所蔵）</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="lead">
+    明治四十二年の『見付町戸別明細図』がほかの地図と決定的に違うのは、「戸別」――つまり一軒ずつ、世帯ごとに名前が記されている点です。街道や小路に沿ってびっしりと並ぶその名前は、当時そこに暮らし、家を守ってきた人々のしるしです。相続や空き家のご相談をお受けするとき、私たちが見ているのも、この「受け継がれてきた家」という時間の重なりです。
+  </div>
+
+  <h2><span class="en">HOUSE BY HOUSE</span>「戸別」── 一軒ずつ記された家並み</h2>
+  <p>地図を開くと、まず目に飛び込んでくるのは、道に沿ってびっしりと並ぶ手書きの名前です。赤い線で引かれた街道や小路の両側に、家が一軒ずつ、世帯ごとに記されています。間口の狭い家が肩を寄せ合うように連なり、その奥に敷地がのびていく。宿場町・見付の、人の密度の高い暮らしぶりが、そのまま紙の上に写し取られています。</p>
+  <p>一軒ずつの名前を眺めていると、ここが単なる土地の集まりではなく、家と家、人と人が重なり合って成り立っていた町だったことが伝わってきます。今に残る地割や町名の多くは、この時代の暮らしの単位を、かたちを変えながら受け継いだものです。</p>
+
+  <h2><span class="en">A MARK OF SUCCESSION</span>名前は、受け継がれてきたしるし</h2>
+  <p>戸別に記された名前は、その家がそこに「在った」という記録です。そして多くの家は、その後も世代を越えて住み継がれ、相続され、今へとつながっています。百年以上前の地図に記された区画が、現在のあなたの土地につながっている――見付では、それは決して珍しいことではありません。</p>
+  <p>だからこそ、相続した家や土地に向き合うとき、それを単なる「不動産」として数字だけで捉えてしまうと、どこか落ち着かない気持ちが残ります。そこには、長く続いてきた家の歴史があるからです。</p>
+
+  <p class="pull">そこにあるのは、土地建物ではなく、受け継がれてきた家の歴史である。</p>
+
+  <h2><span class="en">NOT JUST DISPOSAL</span>相続した家は、「処分するもの」ではない</h2>
+  <p>相続した家や空き家の話になると、つい「どう処分するか」という言葉で語られがちです。けれど、私たちはそれを少し違う角度から見ています。手放すかどうかを考える前に、まずその家がどんな経緯で受け継がれてきたのかを整理する。それは、過去を懐かしむためではなく、これからをきちんと決めるための準備です。</p>
+  <p>来歴を整理しておくと、選択肢が見えやすくなります。売る、貸す、活用する、今は動かさない――どれを選ぶにしても、家の背景を知っているかどうかで、判断の納得感がまるで変わってきます。</p>
+
+  <figure class="plate">
+    <img src="images/07_ippommatsu.jpg" data-cap="「一本松・川原」 ― 街道の西の入口にあたる一帯。家並みが連なる。" alt="見付町戸別明細図 一本松・川原">
+    <figcaption>「一本松・川原」のシート。街道の西の入口にあたる一帯にも、一軒ずつの暮らしが細かく記されています。</figcaption>
+  </figure>
+
+  <h2><span class="en">START BY ORGANIZING</span>まずは、家の来歴を整理することから</h2>
+  <p>見付の古い家、相続した土地、空き家について、すぐに売る・売らないを決める必要はありません。まずは、その土地がどんな背景を持ち、どう受け継がれてきたのかを整理するところから始めれば十分です。名義はどうなっているか、いつ頃からの家か、どんな経緯で今に至るのか。一つずつほどいていくと、進むべき方向が自然と見えてきます。</p>
+
+  <div class="cta">
+    <p class="big">急いで決めなくていい。まず、整理することから。</p>
+    <p>富士ヶ丘サービスでは、磐田市見付周辺の相続不動産・空き家・古い住宅のご相談を承っています。すぐに売るかどうか決まっていなくても構いません。まずは、家と土地の状況を一緒に整理するところからお手伝いします。</p>
+  </div>
+
+  <div class="nextprev">
+    <a href="kai1.html"><small>&laquo; 第1回</small>見付の土地と記憶</a>
+    <a href="kai3.html"><small>第3回 &raquo;</small>古い町の土地を売るとき、なぜ調査が大切なのか</a>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>出典・資料について</h3>
+    <p>資料：『見付町戸別明細圖』明治四十二年一月調査　全17葉＋表紙（佐口行正氏 所蔵史料）</p>
+    <p>各図には当時の世帯名など個人にかかわる記載が含まれます。郷土史・都市史の貴重な記録として公開しています。ご関係者・ご子孫の方でお気づきの点があれば当社までご連絡ください。</p>
+    <p style="margin-top:14px">&copy; 富士ヶ丘サービス株式会社 ／ 磐田物語</p>
+  </div>
+</footer>
+
+<footer class="im-foot">
+<style>
+.im-foot{background:#3a312a;color:#e9e0d2;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.9;letter-spacing:.02em;}
+.im-foot *{box-sizing:border-box;}
+.im-foot .im-inner{max-width:1040px;margin:0 auto;padding:44px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;}
+.im-foot .im-brand{font-family:"Shippori Mincho",serif;font-size:22px;font-weight:700;letter-spacing:.06em;}
+.im-foot .im-brand .im-dot{color:#a6713e;}
+.im-foot .im-note{font-size:13px;color:#b8ab98;line-height:1.9;max-width:520px;}
+.im-foot .im-links{width:100%;margin-top:6px;}
+.im-foot .im-lh{font-size:12px;color:#9c8f7c;letter-spacing:.1em;margin:0 0 10px;font-weight:700;}
+.im-foot .im-links ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;}
+.im-foot .im-links li{font-size:13px;line-height:1.6;}
+.im-foot .im-links a{color:#d8cab4;text-decoration:none;border-bottom:1px solid rgba(216,202,180,.3);padding-bottom:1px;transition:.2s;}
+.im-foot .im-links a:hover{color:#f3ece0;border-color:#e7c9a3;}
+.im-foot .im-desc{display:block;color:#9c8f7c;font-size:11.5px;letter-spacing:.02em;margin-top:1px;}
+.im-foot .im-sns{width:100%;margin-top:20px;}
+.im-foot .im-icons{display:flex;gap:14px;}
+.im-foot .im-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(216,202,180,.3);color:#d8cab4;transition:.2s;}
+.im-foot .im-icons a:hover{color:#f3ece0;border-color:#e7c9a3;background:rgba(231,201,163,.08);}
+.im-foot .im-icons svg{width:19px;height:19px;fill:currentColor;}
+.im-foot .im-copy{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:12.5px;color:#9c8f7c;letter-spacing:.04em;}
+</style>
+  <div class="im-inner">
+    <div class="im-brand">磐田物語<span class="im-dot">。</span></div>
+    <div class="im-note">静岡県磐田市の歴史と文化を、地域で暮らしと不動産に関わる者の視点から書き留めていく記録の場です。記載内容は個人の調査・覚え書きをもとにしたものですが、正確性の向上に努めながら綴っています。</div>
+    <div class="im-links">
+      <p class="im-lh">大石浩之の活動</p>
+      <ul>
+        <li><a href="https://www.fujigaoka-service.co.jp/" target="_blank" rel="noopener">富士ヶ丘サービス（不動産）<span class="im-desc">磐田・袋井の不動産売却支援</span></a></li>
+        <li><a href="https://www.fujigaoka-service.info/" target="_blank" rel="noopener">富士ヶ丘サービス（介護）<span class="im-desc">高齢者向け住宅・親の家の相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/" target="_blank" rel="noopener">実家じまい・空き家相談室<span class="im-desc">親の家・実家じまい・空き家のご相談</span></a></li>
+        <li><a href="https://iwata-monogatari.github.io/fujigaoka-souzoku-soudan/" target="_blank" rel="noopener">相続はじめ・空き家相談室<span class="im-desc">親の家・相続はじめ・空き家のご相談</span></a></li>
+        <li><a href="https://hiroyukio0122.wixsite.com/for202904" target="_blank" rel="noopener">磐田市政、ちょっと一言。<span class="im-desc">市政・地域への提言</span></a></li>
+        <li><a href="https://note.com/fujigaoka_oishi" target="_blank" rel="noopener">note（大石浩之）<span class="im-desc">日々の発信・エッセイ</span></a></li>
+      </ul>
+      <div class="im-sns">
+        <p class="im-lh">SNS</p>
+        <div class="im-icons">
+          <a href="https://www.facebook.com/oishi.hiroyuki.5" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hiroyuki.oishi.fujigaoka/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.22.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.22-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.22-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.22.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.63.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/><circle cx="18.41" cy="5.59" r="1.44"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="im-copy">© 磐田物語 ｜ 遠江・見付のまちの歴史と文化</div>
+  </div>
+</footer>
+
+
+<div id="lb"><img src="" alt=""><div class="cap"></div><div class="hint">クリックで閉じる</div></div>
+
+<script>
+(function(){
+  var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),lbc=lb.querySelector('.cap');
+  function open(src,cap){lbi.src=src;lbc.textContent=cap||'';lb.classList.add('on');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('on');lbi.src='';document.body.style.overflow='';}
+  document.addEventListener('click',function(e){var t=e.target;if(t.tagName==='IMG'&&t.dataset.cap&&!t.closest('#lb')){open(t.getAttribute('src'),t.dataset.cap);}});
+  lb.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+</script>
+</body>
+</html>
+                                                                                                                                                                           
