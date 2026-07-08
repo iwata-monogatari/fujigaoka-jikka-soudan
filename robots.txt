@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://iwata-monogatari.github.io/fujigaoka-jikka-soudan/sitemap.xml
