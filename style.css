@@ -88,9 +88,21 @@ figcaption { padding: 12px 14px; font-size: .84rem; color: var(--muted); backgro
 .center-link { margin-top: 26px; text-align: center; }
 .page-hero { padding: 58px 0 40px; background: linear-gradient(180deg, var(--soft), #fffdf9); border-bottom: 1px solid var(--line); }
 .article-body h2 { margin-top: 34px; font-size: 1.55rem; }
+.article-body p { font-size: 1.02rem; }
 .check-bullets { padding: 0; list-style: none; display: grid; gap: 10px; }
 .check-bullets li { padding: 12px 14px; border-left: 4px solid var(--primary); background: var(--soft); border-radius: 0 var(--radius) var(--radius) 0; }
 .article-cta { margin-top: 42px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--soft); }
+.info-illustration { margin: 34px 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(32,39,37,.07); }
+.info-illustration svg { width: 100%; height: auto; display: block; }
+.info-illustration figcaption { border-top: 1px solid var(--line); }
+.info-table { margin: 24px 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+.info-table div { display: grid; grid-template-columns: minmax(150px, .42fr) 1fr; border-top: 1px solid var(--line); }
+.info-table div:first-child { border-top: 0; }
+.info-table b, .info-table span { padding: 14px 16px; }
+.info-table b { background: var(--tint); color: var(--primary); }
+.note-box { margin: 28px 0; padding: 22px; border-left: 5px solid var(--accent); background: #fff; border-radius: 0 var(--radius) var(--radius) 0; box-shadow: 0 8px 22px rgba(32,39,37,.05); }
+.note-box h3 { color: var(--primary); }
+.faq-support { margin-top: 42px; padding-top: 28px; border-top: 1px solid var(--line); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tags span { display: inline-flex; padding: 3px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .82rem; }
 .diagnosis fieldset { border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; margin: 0 0 18px; background: #fff; }
@@ -129,5 +141,8 @@ figcaption { padding: 12px 14px; font-size: .84rem; color: var(--muted); backgro
   .btn { width: 100%; }
   .four-links, .choice-grid { grid-template-columns: 1fr; }
   .card, .compare-card, .step, .contact-panel, .mail-form { padding: 20px; }
+  .info-table div { grid-template-columns: 1fr; }
+  .info-table b { padding-bottom: 6px; }
+  .info-table span { padding-top: 6px; }
   .footer-bottom { flex-direction: column; }
 }
